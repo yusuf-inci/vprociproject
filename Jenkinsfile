@@ -15,8 +15,8 @@ pipeline {
     NEXUSPORT = '8081'
     NEXUS_GRP_REPO = 'vpro-maven-group'
     NEXUS_LOGIN = 'nexuslogin'
-    //SONARSERVER = 'sonarserver'
-    //SONARSCANNER = 'sonarscanner'
+    /*SONARSERVER = 'sonarserver'*/
+    /*SONARSCANNER = 'sonarscanner'*/
     }
 
     stages {
@@ -25,8 +25,6 @@ pipeline {
                 sh 'mvn -s settings.xml -DskipTests install'    
             }
         }
-
-
     }
 
 }       
