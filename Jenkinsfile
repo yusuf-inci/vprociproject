@@ -37,7 +37,7 @@ pipeline {
             }
         }
 
-        /*stage('Test'){
+        stage('Test'){
             steps {
                 sh 'mvn -s settings.xml test'
             }
@@ -50,7 +50,7 @@ pipeline {
             }
         }
 
-        stage('Sonar Analysis') {
+        /*stage('Sonar Analysis') {
             environment {
                 scannerHome = tool "${SONARSCANNER}"
             }
