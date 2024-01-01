@@ -16,7 +16,7 @@ pipeline {
 		NEXUS_PASS = 'admin'
 		RELEASE_REPO = 'vprofile-release'
 		CENTRAL_REPO = 'vpro-maven-central'
-		NEXUSIP = '172.31.3.12'
+		NEXUSIP = '192.168.40.21'
 		NEXUSPORT = '8081'
 		NEXUS_GRP_REPO = 'vpro-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
@@ -37,7 +37,7 @@ pipeline {
             }
         }
 
-        /*stage('Test'){
+        stage('Test'){
             steps {
                 sh 'mvn -s settings.xml test'
             }
@@ -99,7 +99,7 @@ pipeline {
                 )
             }
         }
-    */
+
     }
 
     /*post {
